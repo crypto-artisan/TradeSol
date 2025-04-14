@@ -1,39 +1,69 @@
-# Telegram Solana Bot (Raydium, Jupiter, Pump.fun)
-## Main Features
+# Solana Trading Bot (Raydium, Jupiter, Pump.fun)
 
-- Track All tokens, All Pools on Raydium(AMM, CLMM), Jupiter, Pump.fun 
-- Buy and sell all SPL tokens using JITO on Raydium, Jupiter, Pump.fun
-- Auto-buy/sell according to the user setting
-- PNL Card generation
-- Provide a security by creating new GT wallet, not requires user wallet private key
+## Overview
+A powerful Telegram bot for trading, tracking, and managing Solana-based tokens across multiple platforms.
 
-## Screenshot
+## Features
+
+| Category | Features |
+|----------|----------|
+| **Tracking** | • Track all tokens across Raydium (AMM, CLMM), Jupiter, Pump.fun<br>• Real-time price monitoring<br>• Market trend analysis |
+| **Trading** | • Buy and sell all SPL tokens using JITO<br>• Execute trades on Raydium, Jupiter, Pump.fun<br>• Auto-buy/sell based on user settings |
+| **Analytics** | • PNL Card generation<br>• Performance metrics<br>• Transaction history |
+| **Security** | • Creates new GT wallet - no private key required<br>• Secure authentication process<br>• Encrypted communication |
+
+## Screenshots
 
 ![a](./a.jpg)
 ![b](./b.png)
 
-## Tech stack
-- Typescript
-- Telegram API
-- Solana/web3
-- Raydium SDK
-- Jupiter API
-- Pump.fun
-- JITO
-- Birdeye API
-- MongoDB
-- Redis
+## Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| **Language** | Typescript |
+| **Blockchain** | Solana/web3, JITO |
+| **DEX & API** | Raydium SDK, Jupiter API, Pump.fun |
+| **Data** | Birdeye API |
+| **Storage** | MongoDB, Redis |
+| **Interface** | Telegram API |
+
+## Versions
+
+### Basic vs Advanced Features
+
+| Feature | Basic Version | Advanced Version |
+|---------|---------------|------------------|
+| **Token Tracking** | All tokens on major platforms | + Custom token alerts<br>+ Watchlist management |
+| **Trading** | Manual & basic auto trading | + Advanced trading strategies<br>+ Stop-loss & take-profit<br>+ Dollar-cost averaging |
+| **Analytics** | Basic PNL tracking | + Advanced portfolio analytics<br>+ Historical performance graphs<br>+ Tax reporting exports |
+| **Alerts** | Price alerts | + Whale movement alerts<br>+ Volume spike detection<br>+ Pattern recognition |
+| **Risk Management** | Basic settings | + Risk assessment tools<br>+ Portfolio diversification metrics |
+| **UI** | Standard commands | + Custom dashboard<br>+ Inline keyboard navigation |
+| **API Integration** | Standard APIs | + Additional data sources<br>+ Custom API connectivity |
+
+## Advanced Version Features (Coming Soon)
+
+The Advanced version builds upon the basic version with:
+
+- **AI-powered trading signals** - Predictive analytics based on market patterns
+- **Multi-wallet management** - Control and monitor multiple wallets from a single interface
+- **Custom trading strategies** - Build and deploy complex trading strategies with conditional logic
+- **Enhanced security features** - 2FA, IP restrictions, and suspicious activity detection
+- **Advanced charting tools** - Directly in Telegram interface
+- **Priority transaction processing** - Faster execution during congested market periods
+- **Premium support** - Dedicated customer support with faster response times
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 - Node.js installed (v18 or above recommended)
-- Telegram bot token from bot father
+- Telegram bot token from BotFather
 - MongoDB Cluster URI
 - Redis URI
 
-## Configurations
+## Setup and Installation
 
 1. Clone the repository:
 
@@ -44,7 +74,7 @@ git clone https://github.com/crypto-artisan/TradeSol.git
 2. Go to the project directory:
 
 ```sh
-cd Growtradebot
+cd TradeSol
 ```
 
 3. Install the dependencies:
@@ -53,7 +83,7 @@ cd Growtradebot
 npm install
 ```
 
-4. Create a new `.env` file and add your Private key, Rpc URL
+4. Create a new `.env` file and add your configuration:
 
 `.env` file
 ```sh
@@ -78,18 +108,19 @@ BIRD_EVE_API=
 GROWSOL_API_ENDPOINT=
 
 PNL_IMG_GENERATOR_API=
-
 ```
 
-5. Then run the bot
+5. Then run the bot:
 
 ```sh
 npm run serve
 ```
 
-## Version 1.0,   21/6/2024
+## Version History
+- v1.0: Initial Release (21/6/2024)
+- v2.0: Advanced Features (Coming Soon)
 
-## Contact me
+## Contact
+
 - [Telegram](https://t.me/JohnDAT0218)
-
 - [Github](https://github.com/crypto-artisan)
