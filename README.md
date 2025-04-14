@@ -14,8 +14,9 @@ A powerful Telegram bot for trading, tracking, and managing Solana-based tokens 
 
 ## Screenshots
 
-![a](./a.jpg)
-![b](./b.png)
+| Main interface | Trading view |
+|------------|-------------|
+| ![Screenshot A](./a.jpg) | ![Screenshot B](./b.png) |
 
 ## Tech Stack
 
